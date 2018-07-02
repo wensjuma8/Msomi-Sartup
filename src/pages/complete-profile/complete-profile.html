@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CompleteProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Complete Your Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating>Full Name</ion-label>
+      <ion-input type="text"[(ngModel)]="fname"></ion-input>
+      </ion-item>
+    <ion-item>
+        <ion-label floating>Username</ion-label>
+      <ion-input type="text"[(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Course</ion-label>
+        <ion-input type="text"[(ngModel)]="course"></ion-input>
+        </ion-item>
+
+        <br>
+        <button ion-button full (click)="addOnProfile(fname, name, course);" color="primary"><ion-icon name="ios-add-circle">Add Profile</ion-icon> </button>
+</ion-content>

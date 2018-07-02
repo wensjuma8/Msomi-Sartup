@@ -1,0 +1,24 @@
+page-login {
+    .login-card{
+        width: 70% auto;
+        margin-top: 80px;
+        text-decoration-color: adjust-hue($color: #023352, $degrees: 23);
+        text-align: center;
+        button{
+            //margin-left: 10px;
+            margin-right: 10px;
+            background-color:#063352;
+           
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40pt;
+            font-weight: bolder;
+        }
+        hr{
+            background-color: #063352;
+        }
+    }
+    
+
+}

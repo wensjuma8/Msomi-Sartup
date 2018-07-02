@@ -1,0 +1,42 @@
+
+
+    <ion-header>
+
+        <ion-navbar>
+          <ion-title>Profile</ion-title>
+        </ion-navbar>
+      
+      </ion-header>
+      
+      
+      <ion-content padding>
+      
+          <ion-card class="profile-info">
+            <ion-buttons end>
+              <button ion-button round (click)="profileComplete()" >Complete Profile</button>
+            </ion-buttons>
+            <h3 >Personal Profile</h3>
+            <ion-item class="item-profile">
+              <img src="/img/bet.jpg" alt="">
+               <div class="item-avatar">
+               </div>
+             </ion-item>
+            <p>Full Name:{{( profiledata | async )?.fname }}</p>
+            <p>Username:{{( profiledata | async )?.name }}</p>
+            <p>Course:{{( profiledata | async )?.course }}</p>
+             
+          </ion-card>
+       
+        <ion-card class="profile-background">
+          <br>
+          <button ion-button color="success" full (click)="openFeeds()">Feeds</button><br><hr>
+          <button ion-button color="success" full (click)="openPosts()">My Posts</button><br><hr>
+          <button ion-button color="success" full (click)="openMaterials()">Course Materials</button><br><hr>
+          <button ion-button color="success" full (click)="openMain()">Main</button><br><hr>
+        </ion-card>
+      
+      </ion-content>
+      
+
+
+
